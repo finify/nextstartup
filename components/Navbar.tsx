@@ -1,5 +1,5 @@
 import { auth , signOut , signIn } from '@/auth'
-import { sign } from 'crypto'
+// import { sign } from 'crypto'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -12,7 +12,7 @@ const Navbar = async () => {
     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
       <nav className="flex items-center justify-between">
         <Link href="/">
-          <Image src="/nextstartup.png" alt="logo" width={140} height={50} />
+          <Image src="/nextstartup.png" alt="logo" width={140} height={50} style={{ width: 'auto', height: 'auto' }} />
         </Link>
 
         <div className="flex items-center space-x-4 text-black">
